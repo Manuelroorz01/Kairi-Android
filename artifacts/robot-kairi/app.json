@@ -8,7 +8,10 @@
     "scheme": "robot-kairi",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "backgroundColor": "#0A192F"
+      "image": "./assets/images/brand-logo.png",
+      "imageWidth": 260,
+      "resizeMode": "contain",
+      "backgroundColor": "#050B18"
     },
     "ios": {
       "supportsTablet": false,
@@ -18,6 +21,10 @@
       }
     },
     "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#050B18"
+      },
       "permissions": [
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_ADMIN",
