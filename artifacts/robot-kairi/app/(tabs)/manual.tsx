@@ -73,7 +73,7 @@ export default function ManualScreen() {
           </View>
           <Text style={[styles.sectionTitle, { color: colors.foreground }]}>Conoce a Kairi</Text>
           <Text style={[styles.bodyCopy, { color: colors.mutedForeground }]}>
-            El Robot Kairi es un dispositivo interactivo de escritorio controlado manualmente. Cuenta con iluminación LED RGB y un sistema de alimentación autónomo mediante batería recargable. Su diseño está optimizado para el aprendizaje de robótica básica.
+            El Robot Kairi es un dispositivo interactivo de escritorio controlado manualmente. Cuenta con iluminación LED RGB y un sistema de alimentación autónomo mediante una batería desmontable de 9 V. Su diseño está optimizado para el aprendizaje de robótica básica.
           </Text>
         </View>
       )}
@@ -84,10 +84,9 @@ export default function ManualScreen() {
           {[
             'ESP32',
             'Luces LED RGB',
-            'Batería LiPo 3.7V 800mAh',
+            'Batería desmontable de 9 V',
             'Módulo Step-Up',
-            'Pulsadores',
-            'Estructura: cabeza, cuerpo y patas',
+            'Estructura: cabeza y cuerpo',
           ].map((item, index) => (
             <View key={item} style={[styles.listRow, index > 0 && { borderTopColor: colors.border, borderTopWidth: 1 }]}>
               <View style={[styles.bullet, { backgroundColor: colors.primary }]} />
@@ -101,10 +100,10 @@ export default function ManualScreen() {
         <View style={[styles.infoCard, { backgroundColor: colors.card, borderColor: colors.border }]}>
           <Text style={[styles.sectionTitle, { color: colors.foreground }]}>Características</Text>
           {[
-            ['Dimensiones', '15 × 12 × 15 cm'],
-            ['Peso', '0.75 kg'],
-            ['Batería', 'LiPo 3.7V / 800mAh'],
-            ['Carga', 'USB-C'],
+            ['Dimensiones', 'Pendiente'],
+            ['Peso', 'Pendiente'],
+            ['Batería', '9 V desmontable'],
+            ['Carga', 'Cualquier cargador USB-C'],
           ].map(([label, value], index) => (
             <View key={label} style={[styles.specRow, index > 0 && { borderTopColor: colors.border, borderTopWidth: 1 }]}>
               <Text style={[styles.specLabel, { color: colors.mutedForeground }]}>{label}</Text>
@@ -121,7 +120,7 @@ export default function ManualScreen() {
             'Mantener seco',
             'Evitar golpes',
             'No exponer a altas temperaturas',
-            'Usar cargador original',
+            'Usar cualquier cargador USB-C',
             'Limpiar con paño suave',
           ].map((item, index) => (
             <View key={item} style={[styles.careRow, index > 0 && { borderTopColor: colors.border, borderTopWidth: 1 }]}>
@@ -148,8 +147,8 @@ const styles = StyleSheet.create({
   eyebrow: { fontSize: 10, letterSpacing: 2, fontWeight: '800', marginBottom: 5 },
   title: { fontSize: 29, fontWeight: '800' },
   logo: { width: 55, height: 55, borderRadius: 14 },
-  tabRail: { flexDirection: 'row', flexWrap: 'wrap', padding: 5, borderRadius: 16, borderWidth: 1, gap: 4, marginBottom: 16 },
-  tab: { minHeight: 36, borderRadius: 11, paddingHorizontal: 9, flexGrow: 1, flexBasis: '21%', alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 5 },
+  tabRail: { flexDirection: 'row', flexWrap: 'wrap', padding: 6, borderRadius: 16, borderWidth: 1, columnGap: 5, rowGap: 5, marginBottom: 16 },
+  tab: { minHeight: 38, borderRadius: 11, paddingHorizontal: 9, width: '48%', alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 5 },
   tabText: { fontSize: 10, fontWeight: '700' },
   featureCard: { borderWidth: 1, borderRadius: 20, padding: 19, minHeight: 238 },
   featureIcon: { width: 44, height: 44, borderRadius: 14, alignItems: 'center', justifyContent: 'center', marginBottom: 17 },
