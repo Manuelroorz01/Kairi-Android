@@ -73,7 +73,7 @@ export default function ManualScreen() {
           </View>
           <Text style={[styles.sectionTitle, { color: colors.foreground }]}>Conoce a Kairi</Text>
           <Text style={[styles.bodyCopy, { color: colors.mutedForeground }]}>
-            El Robot Kairi es un dispositivo interactivo de escritorio controlado manualmente. Cuenta con iluminación LED RGB y un sistema de alimentación autónomo mediante una batería desmontable de 9 V. Su diseño está optimizado para el aprendizaje de robótica básica.
+            El Robot Kairi es un dispositivo interactivo de escritorio controlado manualmente. Cuenta con iluminación LED RGB y un sistema de alimentación autónomo mediante una batería desmontable de 9 V. Su diseño está pensado para conectar con las personas mediante su código de colores.
           </Text>
         </View>
       )}

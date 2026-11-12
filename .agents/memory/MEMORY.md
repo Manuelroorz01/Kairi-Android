@@ -1,1 +1,1 @@
-- [Especificaciones físicas de Kairi](kairi-hardware-specs.md) — batería desmontable de 9 V; sin pulsadores ni patas; dimensiones y peso pendientes; cargador USB-C estándar.
+- [Datos y propósito de Kairi](kairi-hardware-specs.md) — batería desmontable de 9 V, sin pulsadores ni patas; conecta con personas mediante su código de colores.
