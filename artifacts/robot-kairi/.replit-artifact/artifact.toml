@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/"
+title = "Robot Kairi"
+description = "Aplicación móvil Expo para conectarse por Bluetooth clásico al Robot Kairi y controlar su iluminación RGB con el protocolo de comandos especificado."
+version = "1.0.0"
+id = "artifacts/robot-kairi"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 23378
+
+[services.development]
+run = "pnpm --filter @workspace/robot-kairi run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/robot-kairi", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/robot-kairi", "run", "serve" ]
+
+[services.env]
+PORT = "23378"
+BASE_PATH = "/"

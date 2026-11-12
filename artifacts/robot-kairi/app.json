@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Robot Kairi",
+    "slug": "robot-kairi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "robot-kairi",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#0A192F"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSBluetoothPeripheralUsageDescription": "Robot Kairi usa Bluetooth para controlar la iluminación RGB.",
+        "NSBluetoothAlwaysUsageDescription": "Robot Kairi usa Bluetooth para controlar la iluminación RGB."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN"
+      ],
+      "blockedPermissions": ["android.permission.BLUETOOTH_ADVERTISE"]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "with-rn-bluetooth-classic",
+        {
+          "peripheralUsageDescription": "Robot Kairi usa Bluetooth para controlar la iluminación RGB.",
+          "alwaysUsageDescription": "Robot Kairi usa Bluetooth para controlar la iluminación RGB.",
+          "protocols": []
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
