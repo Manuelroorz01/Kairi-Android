@@ -73,7 +73,7 @@ export default function ManualScreen() {
           </View>
           <Text style={[styles.sectionTitle, { color: colors.foreground }]}>Conoce a Kairi</Text>
           <Text style={[styles.bodyCopy, { color: colors.mutedForeground }]}>
-            El Robot Kairi es un dispositivo interactivo de escritorio controlado manualmente. Cuenta con iluminación LED RGB y un sistema de alimentación autónomo mediante una batería desmontable de 9 V. Su diseño está pensado para conectar con las personas mediante su código de colores.
+            El Robot Kairi es un dispositivo controlado manualmente por via bluetooth. Cuenta con iluminación LED RGB y un sistema de alimentación autónomo mediante una batería desmontable de 9 V. Su diseño zoomorfico está pensado para conectar con personas mediante su código de colores.
           </Text>
         </View>
       )}
@@ -100,10 +100,10 @@ export default function ManualScreen() {
         <View style={[styles.infoCard, { backgroundColor: colors.card, borderColor: colors.border }]}>
           <Text style={[styles.sectionTitle, { color: colors.foreground }]}>Características</Text>
           {[
-            ['Dimensiones', 'Pendiente'],
-            ['Peso', 'Pendiente'],
+            ['Dimensiones', '8cm × 9cm × 31cm'],
+            ['Peso', '0.7 kg, (700 g)'],
             ['Batería', '9 V desmontable'],
-            ['Carga', 'Cualquier cargador USB-C'],
+            ['Carga', 'Cable USB-C'],
           ].map(([label, value], index) => (
             <View key={label} style={[styles.specRow, index > 0 && { borderTopColor: colors.border, borderTopWidth: 1 }]}>
               <Text style={[styles.specLabel, { color: colors.mutedForeground }]}>{label}</Text>

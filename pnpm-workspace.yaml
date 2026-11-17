@@ -25,6 +25,8 @@
 #     - typescript
 #
 # ============================================================================
+nodeLinker: hoisted
+
 minimumReleaseAge: 1440
 
 minimumReleaseAgeExclude:
@@ -67,12 +69,6 @@ catalog:
   zod: ^3.25.76
 
 autoInstallPeers: false
-
-onlyBuiltDependencies:
-  - '@swc/core'
-  - esbuild
-  - msw
-  - unrs-resolver
 
 overrides:
   "proxy-addr@^2": "^2.0.8"
@@ -164,3 +160,6 @@ overrides:
   esbuild: "0.28.2"
   # orval pins js-yaml to an exact version older than the CVE fix (>=4.3.2)
   js-yaml: '4.3.2'
+
+allowBuilds:
+  esbuild: true
